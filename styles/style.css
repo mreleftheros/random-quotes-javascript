@@ -40,4 +40,25 @@ body {
 }
 .content__btn:hover {
   background: gray;
+}
+.content__quote-container {
+  width: 50%;
+  margin: auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.content__quote-container__quote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.content__quote-container__quote::first-letter {
+  text-transform: capitalize;
+  font-size: 4rem;
+  color: #f00;
+}
+.content__quote-container__author {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@ const getRandomQuote = async () => {
     }
     const data = await response.json();
 
-    return data;
+    updateUI(data.quotes[0].text, data.quotes[0].author);
   }
   catch(err) {
     console.log("ERROR", err);
@@ -25,4 +25,5 @@ const getRandomQuote = async () => {
 };
 
 // events
+document.addEventListener("DOMContentLoaded", getRandomQuote);
 generateBtn.addEventListener("click", getRandomQuote);
