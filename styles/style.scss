@@ -1,2 +1,26 @@
 @import "defaults";
 
+.content {
+  background: teal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  min-height: 30rem;
+  min-width: 60rem;
+
+  &__btn {
+    background: rgb(212, 212, 212);
+    border: double #000;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: background .3s ease-in;
+
+    &:hover {
+      background: hsl(0, 0%, 50%);
+    }
+  }
+}
